@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Vyhledávání Google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a href="https://www.google.com/intl/cs/about/" class="topbar-link">O Googlu</a>
+        <a href="https://www.google.com/gmail/" class="topbar-link">Gmail</a>
+        <a href="https://images.google.com/" class="topbar-link">Obrázky</a>
+        <a class="apps-button" href="https://www.google.com/intl/cs/about/products" aria-label="Aplikace Google">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/>
+                <circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>
+                <circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><circle cx="19" cy="19" r="1.6"/>
+            </svg>
+        </a>
+        <a class="sign-in" href="https://accounts.google.com/">Přihlásit se</a>
+    </header>
+
+    <main class="search-home">
+        <div class="wordmark" aria-label="Google" role="img">
+            <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+        </div>
+        <p class="tagline">Svět na dosah jednoho hledání.</p>
+
+        <form class="search-form" action="https://www.google.com/search" method="get" role="search">
+            <label class="visually-hidden" for="search">Hledat</label>
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.8"/>
+                <path d="m16 16 4.2 4.2"/>
+            </svg>
+            <input id="search" type="search" name="q" autocomplete="off">
+            <div class="form-actions">
+                <button type="submit">Vyhledávání Google</button>
+                <button type="submit" name="btnI" value="1">Zkusím štěstí</button>
+            </div>
+        </form>
+
+        <p class="language-offer">Google je k dispozici také v jazyce: <a href="https://www.google.com/?hl=en">English</a></p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-country">Česká republika</div>
+        <div class="footer-links">
+            <nav aria-label="Informace o Googlu">
+                <a href="https://www.google.com/intl/cs/ads/">Reklama</a>
+                <a href="https://www.google.com/services/">Firmy</a>
+                <a href="https://www.google.com/search/howsearchworks/">Jak funguje Vyhledávání</a>
+            </nav>
+            <nav aria-label="Právní informace">
+                <a href="https://policies.google.com/privacy?hl=cs">Ochrana soukromí</a>
+                <a href="https://policies.google.com/terms?hl=cs">Podmínky</a>
+                <a href="https://www.google.com/preferences?hl=cs">Nastavení</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
